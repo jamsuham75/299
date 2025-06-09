@@ -11,7 +11,7 @@ let mydb;
 
 mongoclient.connect(url)
     .then(client=>{
-        console.log('몽고DB 접속 성공');
+        console.log('몽고DB 접속 성공일껄');
         mydb = client.db('myboard');
 
         app.listen(process.env.PORT, function(){
